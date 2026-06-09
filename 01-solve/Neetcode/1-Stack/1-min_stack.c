@@ -17,7 +17,7 @@ So each stack element becomes a pair of integers.
 
 🧱 What we store in C
 
-You’ll use a struct like this:
+We’ll use a struct like this:
 
 typedef struct {
     int val;
@@ -102,7 +102,7 @@ Think of it like:
 ======================================================================
 🔧 What you are required to design
 
-You need to create a class called MinStack that behaves like a stack but supports 4 operations, all in O(1) time:
+We need to create a class called MinStack that behaves like a stack but supports 4 operations, all in O(1) time:
 
 1. push(val)
 
@@ -132,7 +132,7 @@ Because if you just scan the stack every time → that becomes O(n) ❌ (too slo
 
 💡 What they want you to think
 
-You need to store extra information while pushing, so you don’t need to recompute the minimum later.
+We need to store extra information while pushing, so you don’t need to recompute the minimum later.
 
 There are 2 common approaches:
 
@@ -141,12 +141,12 @@ stack → stores all values
 minStack → stores current minimums
 Idea:
 
-When you push a value:
+When We push a value:
 
 push it to normal stack
 also push it to minStack only if it’s <= current min
 
-When you pop:
+When We pop:
 
 if popped value equals minStack top → pop minStack too
 
@@ -154,7 +154,7 @@ So minStack.top() is always the current minimum.
 
 🧠 Why this works
 
-Because you are basically tracking:
+Because We are basically tracking:
 
 “what was the minimum at each stage of the stack”
 
