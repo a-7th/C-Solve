@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int	isValid(char *s) {
-	char stack[10000];
+	char stack[1000];
 	int top = -1;
 	for (int i = 0; s[i]; i++) {
 		char c = s[i];
